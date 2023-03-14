@@ -15,7 +15,7 @@ async function getData(){
 
     container.innerHTML =   `<div class='row'>
                                 <img src='${reponseJS.urls.small}'>
-                                <h2>Artiste : ${reponseJS.user.name} (${reponseJS.user.instagram_username})</h2>
+                                <h2 style="margin-top:1rem">Artiste : ${reponseJS.user.name} (${reponseJS.user.instagram_username})</h2>
                                 <p>Description : ${reponseJS.alt_description != null ? reponseJS.alt_description : 'La description nest pas renseignée'}.</p>
                                 <a href='https://www.instagram.com/${reponseJS.user.instagram_username}' id='instagram'>Instagram</a>
                             </div>`; 
